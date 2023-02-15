@@ -19,4 +19,15 @@ struct PersistenceController {
         let deleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
         let _ = try? container.persistentStoreCoordinator.execute(deleteRequest, with: container.viewContext)
     }
+
+    func clearAllData() {
+        let fetchRequest: NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: "Dish")
+        let deleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
+
+        do {
+            try container.viewContext.execute(deleteRequest)
+        } catch let error as NSError {
+            print("Error deleting all data: \(error)")
+        }
+    }
 }

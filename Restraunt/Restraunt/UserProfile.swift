@@ -14,6 +14,18 @@ struct UserProfile: View {
     @Environment(\.presentationMode) var presentation
     var body: some View {
         VStack {
+            HStack (alignment: .center) {
+                Spacer()
+                Image("logo")
+                    .resizable()
+                    .frame(width: 160, height: 60, alignment: .trailing)
+                    .padding()
+                Spacer()
+                Image("profile-image-placeholder")
+                    .resizable()
+                    .frame(width: 40, height: 40, alignment: .trailing)
+                    .padding(.trailing)
+            }
             Text("Personal information")
             Image("profile-image-placeholder")
                 .resizable()
@@ -25,6 +37,10 @@ struct UserProfile: View {
                 UserDefaults.standard.set(false, forKey: kIsLoggedIn)
                 self.presentation.wrappedValue.dismiss()
             }
+            .padding()
+            .background(.blue)
+            .foregroundColor(.white)
+            .cornerRadius(16)
             Spacer()
         }
     }

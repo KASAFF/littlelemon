@@ -23,9 +23,34 @@ struct Onboarding: View {
                 NavigationLink(destination: Home(), isActive: $isLoggedIn) {
                     return EmptyView()
                 }
-                TextField("First Name", text: $firstName)
-                TextField("Last Name", text: $lastName)
-                TextField("Email", text: $email)
+                Image("logo")
+                Spacer()
+                VStack (spacing: 16) {
+                    TextField("First Name", text: $firstName)
+                        .cornerRadius(12)
+                        .padding()
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 16)
+                                .stroke(Color.secondary, lineWidth: 1)
+                        )
+
+                    TextField("Last Name", text: $lastName)
+                        .cornerRadius(12)
+                        .padding()
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 16)
+                                .stroke(Color.secondary, lineWidth: 1)
+                        )
+                    TextField("Email", text: $email)
+                        .cornerRadius(12)
+                        .padding()
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 16)
+                                .stroke(Color.secondary, lineWidth: 1)
+                        )
+                }
+                .padding()
+
                 Button("Register") {
                     if !firstName.isEmpty && !lastName.isEmpty && !email.isEmpty {
                         if isValidEmail(email) {
@@ -38,6 +63,7 @@ struct Onboarding: View {
                     }
                 }
                 .buttonStyle(.bordered)
+                Spacer()
             }
             .onAppear {
                 if UserDefaults.standard.bool(forKey: kIsLoggedIn) {

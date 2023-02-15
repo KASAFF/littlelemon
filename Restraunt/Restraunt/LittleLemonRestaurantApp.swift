@@ -11,7 +11,7 @@ import SwiftUI
 struct RestrauntApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Onboarding()
         }
     }
 }

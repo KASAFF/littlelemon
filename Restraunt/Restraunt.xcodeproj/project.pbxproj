@@ -7,20 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AB615CA4299D222B0058986A /* JSONMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB615CA3299D222B0058986A /* JSONMenu.swift */; };
 		AB615CA7299D231C0058986A /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB615CA6299D231C0058986A /* Onboarding.swift */; };
 		AB615CA9299D29A50058986A /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB615CA8299D29A50058986A /* Home.swift */; };
 		AB615CAB299D29CA0058986A /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB615CAA299D29CA0058986A /* Menu.swift */; };
+		AB615CAD299D2E180058986A /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB615CAC299D2E180058986A /* UserProfile.swift */; };
+		AB615CB0299D3FAC0058986A /* FetchedObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB615CAE299D3FAC0058986A /* FetchedObjects.swift */; };
+		AB615CB1299D3FAC0058986A /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB615CAF299D3FAC0058986A /* Persistence.swift */; };
+		AB615CB3299D3FDF0058986A /* MenuList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB615CB2299D3FDF0058986A /* MenuList.swift */; };
+		AB615CB5299D3FE40058986A /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB615CB4299D3FE40058986A /* MenuItem.swift */; };
+		AB615CB8299D43770058986A /* ExampleDatabase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AB615CB6299D43770058986A /* ExampleDatabase.xcdatamodeld */; };
 		ABBE14AA299C1A16003C370E /* LittleLemonRestaurantApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBE14A9299C1A16003C370E /* LittleLemonRestaurantApp.swift */; };
 		ABBE14AE299C1A17003C370E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABBE14AD299C1A17003C370E /* Assets.xcassets */; };
 		ABBE14B1299C1A17003C370E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABBE14B0299C1A17003C370E /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AB615CA3299D222B0058986A /* JSONMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONMenu.swift; sourceTree = "<group>"; };
 		AB615CA6299D231C0058986A /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
 		AB615CA8299D29A50058986A /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		AB615CAA299D29CA0058986A /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		AB615CAC299D2E180058986A /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		AB615CAE299D3FAC0058986A /* FetchedObjects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchedObjects.swift; sourceTree = "<group>"; };
+		AB615CAF299D3FAC0058986A /* Persistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		AB615CB2299D3FDF0058986A /* MenuList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuList.swift; sourceTree = "<group>"; };
+		AB615CB4299D3FE40058986A /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		AB615CB7299D43770058986A /* ExampleDatabase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ExampleDatabase.xcdatamodel; sourceTree = "<group>"; };
 		ABBE14A6299C1A16003C370E /* Restraunt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Restraunt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABBE14A9299C1A16003C370E /* LittleLemonRestaurantApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LittleLemonRestaurantApp.swift; sourceTree = "<group>"; };
 		ABBE14AD299C1A17003C370E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -41,7 +51,8 @@
 		AB615CA5299D223C0058986A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				AB615CA3299D222B0058986A /* JSONMenu.swift */,
+				AB615CB4299D3FE40058986A /* MenuItem.swift */,
+				AB615CB2299D3FDF0058986A /* MenuList.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -65,10 +76,14 @@
 		ABBE14A8299C1A16003C370E /* Restraunt */ = {
 			isa = PBXGroup;
 			children = (
+				AB615CB6299D43770058986A /* ExampleDatabase.xcdatamodeld */,
+				AB615CAC299D2E180058986A /* UserProfile.swift */,
 				AB615CAA299D29CA0058986A /* Menu.swift */,
 				ABBE14A9299C1A16003C370E /* LittleLemonRestaurantApp.swift */,
 				AB615CA6299D231C0058986A /* Onboarding.swift */,
 				AB615CA8299D29A50058986A /* Home.swift */,
+				AB615CAE299D3FAC0058986A /* FetchedObjects.swift */,
+				AB615CAF299D3FAC0058986A /* Persistence.swift */,
 				ABBE14AD299C1A17003C370E /* Assets.xcassets */,
 				ABBE14AF299C1A17003C370E /* Preview Content */,
 				AB615CA5299D223C0058986A /* Model */,
@@ -155,10 +170,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABBE14AA299C1A16003C370E /* LittleLemonRestaurantApp.swift in Sources */,
+				AB615CB1299D3FAC0058986A /* Persistence.swift in Sources */,
 				AB615CA7299D231C0058986A /* Onboarding.swift in Sources */,
+				AB615CAD299D2E180058986A /* UserProfile.swift in Sources */,
 				AB615CA9299D29A50058986A /* Home.swift in Sources */,
-				AB615CA4299D222B0058986A /* JSONMenu.swift in Sources */,
+				AB615CB8299D43770058986A /* ExampleDatabase.xcdatamodeld in Sources */,
+				AB615CB0299D3FAC0058986A /* FetchedObjects.swift in Sources */,
+				AB615CB3299D3FDF0058986A /* MenuList.swift in Sources */,
 				AB615CAB299D29CA0058986A /* Menu.swift in Sources */,
+				AB615CB5299D3FE40058986A /* MenuItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +315,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -324,6 +345,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -359,6 +381,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AB615CB6299D43770058986A /* ExampleDatabase.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AB615CB7299D43770058986A /* ExampleDatabase.xcdatamodel */,
+			);
+			currentVersion = AB615CB7299D43770058986A /* ExampleDatabase.xcdatamodel */;
+			path = ExampleDatabase.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = ABBE149E299C1A16003C370E /* Project object */;
 }
